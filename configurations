@@ -1,0 +1,7 @@
+# ssh config
+mkdir -p ~/.ssh
+cat >> ~/.ssh/config << EOF
+StrictHostKeyChecking no
+EOF
+
+
