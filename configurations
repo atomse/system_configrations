@@ -1,5 +1,8 @@
 # ssh config
-mkdir -p ~/.ssh
+filename=~/.ssh/config
+mkdir -p $(dirname $filename)
+touch $filename
+sed -i '/StrictHostKeyChecking/d' $filename
 cat >> ~/.ssh/config << EOF
 StrictHostKeyChecking no
 EOF
