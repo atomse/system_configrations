@@ -8,6 +8,9 @@ StrictHostKeyChecking no
 EOF
 chmod 600 ~/.ssh/config
 
+# remove known_hosts for protection
+rm -f ~/.ssh/known_hosts
+
 # ssh keys
 if [ ! -e ~/.ssh/id_rsa -o ! -e ~/.ssh/id_rsa.pub ]; then
   ssh-keygen -t rsa -P "" -f ~/.ssh/id_rsa
